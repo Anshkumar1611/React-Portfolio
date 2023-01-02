@@ -3,7 +3,7 @@ import Images from "../../../assets/images";
 
 const details = [
   {
-    profile: Images.profile,
+    profile: Images.college,
     course: "Bachelor Of Engineering In Information Technology",
     college: "Dayalbagh Educational Institute",
     place: "AGRA",
@@ -11,7 +11,7 @@ const details = [
     status: "Completed",
   },
   {
-    profile: Images.profile,
+    profile: Images.school,
     course: "Intermediate & High School in Science Stream",
     college: "New St. Stephen's Public School",
     place: "AGRA",
@@ -26,15 +26,16 @@ function EducationCard() {
       {details.map((detail, index) => {
         return (
           <div
-            className="lg:h-52  flex flex-col lg:flex-row gap-2 lg:gap-8 rounded-xl hover:drop-shadow-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:-translate-y-1"
+            className="flex flex-col lg:flex-row gap-2 lg:gap-8 rounded-xl hover:drop-shadow-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 "
             key={index}
           >
             <img
               src={detail.profile}
               alt="college"
-              className="flex h-52 lg:basis-1/4 rounded-lg"
+              className="flex h-52 lg:w-64 lg:basis-1/4 rounded-lg"
             />
-            <div className="flex flex-col gap-3 py-4 px-4 lg:py-8 ">
+            <div className="bg-neutral-content w-2 my-6 hidden lg:flex"></div>
+            <div className="flex flex-col gap-3 py-4 lg:py-8 px-4 lg:px-0">
               <p className="font-bold text-3xl text-info">{detail.course}</p>
               <p className="text-lg font-semibold ">
                 {detail.college} | {detail.place}

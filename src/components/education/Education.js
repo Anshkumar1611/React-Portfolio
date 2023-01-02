@@ -9,7 +9,7 @@ function Education() {
           <p className="text-primary">My</p>
           <p>Education</p>
         </span>
-        <span className="text-lg font-semibold px-2 text-center ">
+        <span className="text-lg font-semibold px-4 text-center ">
           " Education Is Not The Learning Of Facts, But The Training Of The Mind
           To Think."
         </span>

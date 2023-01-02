@@ -8,12 +8,12 @@ function Hero() {
         <Intro />
       </div>
       <div className="basis-1/2 flex items-center">
-        <div className="w-full h-full">
+        <div className="">
           <iframe
-            src=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJyiJ1gPj4NQdsBLuqN-SK5_Kwg_VooHzUw&usqp=CAU"
             width="100%"
             height="100%"
-            className=""
+            className="object-fit"
             title="gif"
           ></iframe>
         </div>

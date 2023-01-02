@@ -20,6 +20,9 @@ const Images = {
   nodejs: require("./skills/node js.png"),
   vscode: require("./skills/vs code.png"),
   python: require("./skills/python.png"),
+  contact: require("./contact/contact.png"),
+  school: require("./education/school.jpg"),
+  college: require("./education/college.jpg"),
 };
 
 export default Images;

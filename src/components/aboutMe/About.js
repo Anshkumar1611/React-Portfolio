@@ -5,7 +5,7 @@ import Rectangular from "../common/buttons/Rectangular";
 function About() {
   return (
     <div className="lg:px-24 bg-neutral-focus pt-4 lg:h-[42rem]">
-      <span className="flex gap-4 justify-center text-5xl font-akronim ">
+      <span className="flex gap-4 justify-center text-5xl font-akronim py-4">
         <p>About</p> <p className="text-primary">Me</p>
       </span>
       <div className="flex flex-col items-center lg:flex-row h-4/6 pt-8">
