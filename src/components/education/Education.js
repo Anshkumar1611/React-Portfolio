@@ -1,21 +1,16 @@
 import React from "react";
 import EducationCard from "../common/cards/EducationCard";
+import Header from "../common/header/Header";
 
 function Education() {
   return (
-    <div className="lg:min-h-screen bg-neutral-focus">
-      <div className="flex flex-col items-center py-4">
-        <span className="font-akronim text-5xl flex gap-2 justify-center py-4">
-          <p className="text-primary">My</p>
-          <p>Education</p>
-        </span>
-        <span className="text-lg font-semibold px-4 text-center ">
-          " Education Is Not The Learning Of Facts, But The Training Of The Mind
-          To Think."
-        </span>
-      </div>
-      <div className="px-12 lg:px-64 py-8">
+    <div className="lg:min-h-screen">
+      <Header title="My Education" />
+
+      <div className="px-12 lg:px-64 py-8 relative">
         <EducationCard />
+        <div className="absolute z-[3] -left-1/2 rounded-full w-[50%] h-[50%] top-0 white__gradient" />
+        <div className="absolute z-[0] -left-1/2 rounded-full w-[50%] h-[50%] bottom-0 pink__gradient" />
       </div>
     </div>
   );

@@ -9,13 +9,13 @@ import Education from "./components/education/Education";
 
 function App() {
   return (
-    <div>
+    <div className="bg-primary ">
       <Navbar />
       <Hero />
-      <About />
       <Skill />
       <Education/>
       <Project />
+      <About />
       <Contact />
       <Footer />
     </div>

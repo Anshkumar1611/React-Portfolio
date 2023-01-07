@@ -1,8 +1,8 @@
 import React from "react";
 import SocialIcons from "../common/socialIcons/SocialIcons";
 import { BiChevronRightCircle, BiPhoneCall } from "react-icons/bi";
-import { TfiEmail} from "react-icons/tfi";
-import { RiMapPinUserFill} from "react-icons/ri";
+import { TfiEmail } from "react-icons/tfi";
+import { RiMapPinUserFill } from "react-icons/ri";
 const pageLinks = [
   { link: "Home", path: "/" },
   { link: "About", path: "/about" },
@@ -13,17 +13,26 @@ const pageLinks = [
 ];
 
 const contactLinks = [
-  { icon: <BiPhoneCall size={20} />, link: "+91 639-670-4951" },
-  { icon: <TfiEmail size={20} />, link: "ansh2018gupta@gmail.com" },
-  { icon: <RiMapPinUserFill size={20} />, link: "Agra,India-282006" },
+  {
+    icon: <BiPhoneCall size={20} className="text-accent" />,
+    link: "+91 639-670-4951",
+  },
+  {
+    icon: <TfiEmail size={20} className="text-accent" />,
+    link: "ansh2018gupta@gmail.com",
+  },
+  {
+    icon: <RiMapPinUserFill size={20} className="text-accent" />,
+    link: "Agra,India-282006",
+  },
 ];
 
 function Footer() {
   return (
     <>
-      <footer className="footer py-10 text-neutral-content border-t-2 bg-neutral-focus border-primary justify-center lg:justify-evenly">
+      <footer className="footer py-10 text-neutral-content justify-center lg:justify-evenly">
         <div className="">
-          <span className="footer-title font-akronim text-2xl text-primary">
+          <span className="footer-title font-poppins text-2xl ">
             Ansh's Portfolio
           </span>
           <p className="text-lg font-playflair">
@@ -39,14 +48,14 @@ function Footer() {
           </p>
         </div>
         <div className="">
-          <span className="footer-title font-akronim text-2xl text-primary">
+          <span className="footer-title font-poppins text-2xl ">
             Quick Links
           </span>
           {pageLinks.map((links, index) => {
             return (
               <a
                 href={links.path}
-                className="link link-hover text-[17px] flex gap-1 items-center hover:decoration-success"
+                className="link link-hover text-[17px] flex gap-1 items-center hover:decoration-accent"
                 key={index}
               >
                 <BiChevronRightCircle className=" text-neutral-content" />
@@ -57,14 +66,14 @@ function Footer() {
         </div>
 
         <div className="">
-          <span className="footer-title font-akronim text-2xl text-primary">
+          <span className="footer-title font-poppins text-2xl ">
             Contact Info
           </span>
           {contactLinks.map((links, index) => {
             return (
               <a
                 href="/"
-                className="link link-hover text-[17px] py-1 flex gap-3 items-center hover:decoration-success"
+                className="link link-hover text-[17px] py-1 flex gap-3 items-center hover:decoration-accent"
                 key={index}
               >
                 {links.icon}
@@ -76,9 +85,11 @@ function Footer() {
           <SocialIcons />
         </div>
       </footer>
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content ">
+      <footer className="footer footer-center p-4 text-base-content ">
         <div>
-          <p className="font-akronim text-xl">Designed With By Ansh Kumar</p>
+          <p className="font-akronim text-xl">
+            Designed With By  <span className="text-secondary">Ansh Kumar</span>
+          </p>
         </div>
       </footer>
     </>

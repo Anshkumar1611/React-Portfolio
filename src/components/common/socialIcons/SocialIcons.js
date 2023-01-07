@@ -18,10 +18,10 @@ function SocialIcons() {
       {social.map((icon, index) => {
         return (
           <div
-            className="w-14 h-14 rounded-full bg-black flex justify-center items-center"
+            className="w-14 h-14 rounded-full bg-dimBlue flex justify-center items-center "
             key={index}
           >
-            <span className="text-xl hover:text-primary cursor-pointer">{icon}</span>
+            <span className="text-xl cursor-pointer ">{icon}</span>
           </div>
         );
       })}

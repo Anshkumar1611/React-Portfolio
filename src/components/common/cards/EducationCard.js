@@ -22,25 +22,26 @@ const details = [
 
 function EducationCard() {
   return (
-    <div className="flex flex-col gap-14">
+    <div className="flex flex-col gap-14 justify-center items-center">
       {details.map((detail, index) => {
         return (
           <div
-            className="flex flex-col lg:flex-row gap-2 lg:gap-8 rounded-xl hover:drop-shadow-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 "
+            className="flex flex-col sm:flex-row gap-2 lg:gap-8 rounded-xl  max-w-4xl w-full bg-black-gradient"
             key={index}
           >
-            <img
-              src={detail.profile}
-              alt="college"
-              className="flex h-52 lg:w-64 lg:basis-1/4 rounded-lg"
-            />
-            <div className="bg-neutral-content w-2 my-6 hidden lg:flex"></div>
-            <div className="flex flex-col gap-3 py-4 lg:py-8 px-4 lg:px-0">
-              <p className="font-bold text-3xl text-info">{detail.course}</p>
-              <p className="text-lg font-semibold ">
+            <div className="flex h-52 relative sm:basis-1/3 ">
+              <img
+                src={detail.profile}
+                alt="college"
+                className=" object-cover w-full h-full sm:rounded-l-xl rounded-t-xl sm:rounded-tr-none"
+              />
+            </div>
+            <div className="flex flex-col gap-3 py-4 lg:py-8 px-4 lg:px-0 sm:basis-2/3 ">
+              <p className="font-bold text-2xl text-info">{detail.course}</p>
+              <p className=" font-semibold ">
                 {detail.college} | {detail.place}
               </p>
-              <p className="text-xl text-primary font-bold">
+              <p className=" ">
                 {detail.year} | {detail.status}
               </p>
             </div>

@@ -23,6 +23,8 @@ const Images = {
   contact: require("./contact/contact.png"),
   school: require("./education/school.jpg"),
   college: require("./education/college.jpg"),
+  hero: require("./hero/hero-1.png"),
+  herobg: require("./hero/background/hero.jpg"),
 };
 
 export default Images;

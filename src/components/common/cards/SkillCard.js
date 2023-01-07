@@ -33,11 +33,11 @@ function SkillCard() {
       {skills.map((skill, index) => {
         return (
           <div
-            className="w-52 h-36 p-4 rounded-lg bg-neutral-focus flex flex-col gap-4 items-center hover:-translate-y-2 drop-shadow-2xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-black cursor-pointer"
+            className="w-52 h-36 p-4 rounded-lg flex flex-col gap-4 items-center hover:-translate-y-2 feature-card cursor-pointer"
             key={index}
           >
             <img src={skill.logo} alt="skills" className=" rounded-lg h-3/6" />
-            <p className="font-bold font-playflair text-xl  px-2 py-1 hover:rounded-xl">
+            <p className="font-semibold font-playflair text-xl  px-2 py-1 hover:rounded-xl">
               {skill.title}
             </p>
           </div>
