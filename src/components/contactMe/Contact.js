@@ -1,8 +1,8 @@
 import React from "react";
-import Images from "../../assets/images";
 import Rectangular from "../common/buttons/Rectangular";
 import { FaTelegramPlane } from "react-icons/fa";
 import Header from "../common/header/Header";
+import { contact } from "../../assets/svg";
 
 const inputArray = [
   { placeholder: "Name", type: "text", required: true },
@@ -18,7 +18,7 @@ function Contact() {
         <div className="bg-black-gradient h-full w-full flex flex-col lg:flex-row gap-4 rounded-lg">
           <div className="basis-1/2 h-full w-full hidden lg:flex items-center justify-center">
             <img
-              src={Images.contact}
+              src={contact}
               alt="contact"
               className="h-4/5 w-4/5 rounded-lg"
             />

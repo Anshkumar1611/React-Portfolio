@@ -5,8 +5,7 @@ import Intro from "./Intro";
 function Hero() {
   return (
     <div
-      className="ss:flex ss:flex-col sm:flex-row px-4 lg:px-36 py-4 lg:h-[42rem]"
-      // style={{ backgroundImage: `url(${Images.herobg})` }}
+      className="ss:flex ss:flex-col sm:flex-row px-8 lg:px-36 py-4 lg:h-[42rem]"
     >
       <div className="basis-1/2 flex items-center ">
         <Intro />

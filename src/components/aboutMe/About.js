@@ -1,18 +1,18 @@
 import React from "react";
-import Images from "../../assets/images";
 import Header from "../common/header/Header";
+import { about } from "../../assets/svg";
 
 function About() {
   return (
-    <div className="lg:px-32 pt-4 lg:h-[42rem] flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="lg:px-32 px-8 pt-4 lg:h-[42rem] flex flex-col justify-center items-center relative overflow-hidden">
       <div className="absolute z-[0] -right-[50%] top-[20%] rounded-full w-[60%] h-[50%] blue__gradient" />
       <Header title="About Me" />
 
-      <div className="flex flex-col items-center sm:flex-row pt-8 overflow-hidden ">
+      <div className="flex flex-col items-center sm:flex-row pt-8 overflow-hidden sm:gap-16">
         <div className="flex md:justify-center items-center md:basis-1/3 ">
           <div className="w-full md:w-96 h-[27rem] p-4 ">
             <img
-              src={Images.profile}
+              src={about}
               alt="Profile"
               className="rounded-lg w-full h-full flex-1 relative z-[5]"
             />
