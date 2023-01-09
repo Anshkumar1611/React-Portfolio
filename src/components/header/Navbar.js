@@ -45,7 +45,7 @@ function Navbar() {
               })}
             </ul>
           </div>
-          <span className="font-akronim text-3xl flex gap-1">
+          <span className="font-poppins text-3xl flex gap-1">
             <p className="text-secondary">Ansh</p>{" "}
             <p className="text-white">Kumar</p>
           </span>

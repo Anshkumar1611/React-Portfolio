@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import {
   SiHeroku,
+  SiFramer,
   SiNetlify,
   SiVisualstudiocode,
   SiPython,
@@ -24,28 +25,28 @@ import { BsGithub } from "react-icons/bs";
 
 const skills = [
   // Frontend
-  { logo: <AiFillHtml5 size={45} className="" />, title: "HTML 5" },
-  { logo: <FaCss3 size={45} className="" />, title: "CSS" },
-  { logo: <SiJavascript size={45} className="" />, title: "Javascript" },
-  { logo: <FaBootstrap size={45} className="" />, title: "Bootstrap" },
-  { logo: <SiTailwindcss size={45} className="" />, title: "Tailwind CSS" },
-  { logo: <SiJquery size={45} className="" />, title: "JQuery" },
-  { logo: <FaReact size={45} className="" />, title: "React" },
-  { logo: <SiMaterialui size={45} className="" />, title: "Material UI" },
-  { logo: <FaGitAlt size={45} className="" />, title: "Framer Motion" },
+  { logo: <AiFillHtml5 size={45}  />, title: "HTML 5" },
+  { logo: <FaCss3 size={45}  />, title: "CSS" },
+  { logo: <SiJavascript size={45}  />, title: "Javascript" },
+  { logo: <FaBootstrap size={45}  />, title: "Bootstrap" },
+  { logo: <SiTailwindcss size={45}  />, title: "Tailwind CSS" },
+  { logo: <SiJquery size={45}  />, title: "JQuery" },
+  { logo: <FaReact size={45}  />, title: "React" },
+  { logo: <SiMaterialui size={45}  />, title: "Material UI" },
+  { logo: <SiFramer size={45}  />, title: "Framer Motion" },
   // Backend
-  { logo: <SiNodedotjs size={45} className="" />, title: "Node JS" },
-  { logo: <SiExpress size={45} className="" />, title: "Express JS" },
-  { logo: <SiFirebase size={45} className="" />, title: "Firebase" },
+  { logo: <SiNodedotjs size={45}  />, title: "Node JS" },
+  { logo: <SiExpress size={45}  />, title: "Express JS" },
+  { logo: <SiFirebase size={45}  />, title: "Firebase" },
   // Languages
-  { logo: <SiC size={45} className="" />, title: "C Language" },
-  { logo: <SiPython size={45} className="" />, title: "Python" },
+  { logo: <SiC size={45}  />, title: "C Language" },
+  { logo: <SiPython size={45}  />, title: "Python" },
   // Tools
-  { logo: <FaGitAlt size={45} className="" />, title: "Git" },
-  { logo: <BsGithub size={45} className="" />, title: "GitHub" },
-  { logo: <SiVisualstudiocode size={45} className="" />, title: "VS Code" },
-  { logo: <SiNetlify size={45} className="" />, title: "Netlify" },
-  { logo: <SiHeroku size={45} className="" />, title: "Heroku" },
+  { logo: <FaGitAlt size={45}  />, title: "Git" },
+  { logo: <BsGithub size={45}  />, title: "GitHub" },
+  { logo: <SiVisualstudiocode size={45}  />, title: "VS Code" },
+  { logo: <SiNetlify size={45}  />, title: "Netlify" },
+  { logo: <SiHeroku size={45}  />, title: "Heroku" },
 ];
 
 function SkillCard() {

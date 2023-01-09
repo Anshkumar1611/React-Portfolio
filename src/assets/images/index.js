@@ -24,7 +24,10 @@ const Images = {
   school: require("./education/school.jpg"),
   college: require("./education/college.jpg"),
   hero: require("./hero/hero-1.png"),
-  herobg: require("./hero/background/hero.jpg"),
+  axar: require("./project/axar.png"),
+  loremIpsum: require("./project/lorem-ipsum.png"),
+  expenseTracker: require("./project/expense-tracker.png"),
+  cocktails: require("./project/cocktails.png"),
 };
 
 export default Images;

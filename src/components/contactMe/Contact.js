@@ -25,6 +25,9 @@ function Contact() {
           </div>
 
           <form className="flex flex-col gap-4 justify-center flex-1 p-8">
+            <span className="text-center font-semibold text-xl -mt-8 font-poppins text-gradient">
+              HIRE ME
+            </span>
             {inputArray.map((input, index) => {
               return (
                 <input
