@@ -1,13 +1,22 @@
 import React from "react";
 
 function Navbar() {
+  const handleCheck = (value) => {
+    if (value === "Home") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const links = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Skills", path: "/skills" },
-    { name: "Education", path: "/education" },
-    { name: "Work", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home" },
+    { name: "Skills", path: "#skill" },
+    { name: "Education", path: "#education" },
+    { name: "Work", path: "#project" },
+    { name: "About", path: "#about" },
+    { name: "Contact", path: "#contact" },
   ];
   return (
     <div className="lg:px-32 sticky top-0 z-50  backdrop-blur-sm  bg-primary/10">
@@ -36,8 +45,15 @@ function Navbar() {
             >
               {links.map((link, index) => {
                 return (
-                  <a href={link.path} alt="nav-links" key={index}>
-                    <li className="font-poppins hover:text-secondary">
+                  <a
+                    href={link.path}
+                    alt="nav-links"
+                    key={index}
+                    onClick={() => {
+                      handleCheck(link.name);
+                    }}
+                  >
+                    <li className="font-poppins hover:text-secondary hover:cursor-pointer">
                       {link.name}
                     </li>
                   </a>
@@ -54,14 +70,24 @@ function Navbar() {
           <ul className="menu menu-horizontal px-2 uppercase font-poppins">
             {links.map((link, index) => {
               return (
-                <a href={link.path} alt="nav-links" key={index}>
-                  <li className={`pl-4  hover:text-secondary`}>{link.name}</li>
+                <a
+                  href={link.path}
+                  alt="nav-links"
+                  key={index}
+                  onClick={() => {
+                    handleCheck(link.name);
+                  }}
+                >
+                  <li
+                    className={`pl-4 hover:cursor-pointer hover:text-secondary`}
+                  >
+                    {link.name}
+                  </li>
                 </a>
               );
             })}
           </ul>
         </div>
-        {/* <div className="navbar-end pr-4 lg:pr-0"><p className="font-akronim text-2xl cursor-pointer hover:text-primary uppercase">Contact Me</p></div> */}
       </div>
     </div>
   );

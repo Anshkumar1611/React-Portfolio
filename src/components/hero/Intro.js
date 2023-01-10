@@ -1,7 +1,8 @@
 import React from "react";
-import Rectangular from "../common/buttons/Rectangular";
 import SocialIcons from "../common/socialIcons/SocialIcons";
-import { FaTelegramPlane } from "react-icons/fa";
+import { GrFormNext } from "react-icons/gr";
+import Link from "../common/link/Link";
+import Typed from "react-typed";
 
 function Intro() {
   return (
@@ -15,11 +16,31 @@ function Intro() {
           Ansh Kumar
         </p>
       </span>
-      <p className="text-3xl font-semibold lg:tracking-wide flex ">
-        I am into Web Development ......
-      </p>
-      <div>
-        <Rectangular title={"See Resume"} icon={<FaTelegramPlane size={20}/>} />
+      <div className="text-3xl font-semibold lg:tracking-wide flex flex-wrap gap-2 ">
+        <span>I am into</span>
+
+        <Typed
+          strings={[
+            "Web Development ..... ",
+            "Frontend Development .....",
+            "Web design .....",
+            "Sports Activities .....",
+          ]}
+          typeSpeed={30}
+          backSpeed={40}
+          attr="placeholder"
+          loop
+        >
+          <input type="text" className="bg-transparent"/>
+        </Typed>
+      </div>
+      <div className="flex">
+        <Link
+          text={"See Resume"}
+          icon={<GrFormNext size={20} />}
+          alt="Resume"
+          url="https://drive.google.com/file/d/1cBXdBJPYwaNpTbIvpxGhLaBjoxfeV_iH/view?usp=sharing"
+        />
       </div>
       <div>
         <SocialIcons />

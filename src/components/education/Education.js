@@ -4,7 +4,7 @@ import Header from "../common/header/Header";
 
 function Education() {
   return (
-    <div className="lg:min-h-screen">
+    <div id="education" className="lg:min-h-screen py-8">
       <Header title="My Education" />
 
       <div className="px-12 lg:px-64 py-8 relative">
