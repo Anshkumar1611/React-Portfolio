@@ -2,7 +2,7 @@ import React from "react";
 import SocialIcons from "../common/socialIcons/SocialIcons";
 import { GrFormNext } from "react-icons/gr";
 import Link from "../common/link/Link";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 
 function Intro() {
   return (
@@ -19,7 +19,7 @@ function Intro() {
       <div className="text-3xl font-semibold lg:tracking-wide flex flex-wrap gap-2 ">
         <span>I am into</span>
 
-        <Typed
+        {/* <Typed
           strings={[
             "Web Development ..... ",
             "Frontend Development .....",
@@ -32,7 +32,7 @@ function Intro() {
           loop
         >
           <input type="text" className="bg-transparent"/>
-        </Typed>
+        </Typed> */}
       </div>
       <div className="flex">
         <Link
