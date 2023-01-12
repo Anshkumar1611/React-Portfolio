@@ -50,11 +50,8 @@ function SkillCard() {
     <div className=" lg:px-44 pb-14 pt-8 flex-1 justify-center flex flex-wrap gap-x-4 gap-y-6 ">
       {skills.map((skill, index) => {
         return (
-          <Tilt>
-            <div
-              className="w-52 h-36 p-4 rounded-lg flex flex-col gap-3 items-center justify-center hover:-translate-y-2 feature-card cursor-pointer hover:text-secondary"
-              key={index}
-            >
+          <Tilt key={index}>
+            <div className="w-52 h-36 p-4 rounded-lg flex flex-col gap-3 items-center justify-center hover:-translate-y-2 feature-card cursor-pointer hover:text-secondary">
               <span className=" rounded-lg ">{skill.logo}</span>
               <p className="font-playflair hover:rounded-xl text-sm text-dimWhite">
                 {skill.title}
