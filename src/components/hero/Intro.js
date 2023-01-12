@@ -18,7 +18,7 @@ function Intro() {
       </span>
       <div className="text-3xl font-semibold lg:tracking-wide flex flex-wrap gap-2 ">
         <span>I am into</span>
-
+        <span>Web Development</span>
         {/* <Typed
           strings={[
             "Web Development ..... ",
