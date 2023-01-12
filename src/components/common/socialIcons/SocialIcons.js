@@ -29,7 +29,7 @@ function SocialIcons() {
               target="_blank"
               rel="noreferrer"
               alt="social-media"
-              className="text-xl cursor-pointer"
+              className="text-xl cursor-pointer hover:text-dimWhite"
             >
               {icons.icon}
             </a>

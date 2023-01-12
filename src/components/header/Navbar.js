@@ -1,4 +1,9 @@
 import React from "react";
+import { FaHome, FaTools } from "react-icons/fa";
+import { SiBookstack } from "react-icons/si";
+import { BiCodeAlt } from "react-icons/bi";
+import { CgProfile } from "react-icons/cg";
+import { MdOutlineContactPhone } from "react-icons/md";
 
 function Navbar() {
   const handleCheck = (value) => {
@@ -11,12 +16,16 @@ function Navbar() {
   };
 
   const links = [
-    { name: "Home" },
-    { name: "Skills", path: "#skill" },
-    { name: "Education", path: "#education" },
-    { name: "Work", path: "#project" },
-    { name: "About", path: "#about" },
-    { name: "Contact", path: "#contact" },
+    { icon: <FaHome size={20} />, name: "Home" },
+    { icon: <FaTools size={20} />, name: "Skills", path: "#skill" },
+    { icon: <SiBookstack size={20} />, name: "Education", path: "#education" },
+    { icon: <BiCodeAlt size={20} />, name: "Work", path: "#project" },
+    { icon: <CgProfile size={20} />, name: "About", path: "#about" },
+    {
+      icon: <MdOutlineContactPhone size={20} />,
+      name: "Contact",
+      path: "#contact",
+    },
   ];
   return (
     <div className="lg:px-32 sticky top-0 z-50  backdrop-blur-sm  bg-primary/10">
@@ -41,7 +50,7 @@ function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu uppercase menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-black-gradient"
+              className={`menu uppercase menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-48 bg-black-gradient`}
             >
               {links.map((link, index) => {
                 return (
@@ -53,9 +62,10 @@ function Navbar() {
                       handleCheck(link.name);
                     }}
                   >
-                    <li className="font-poppins hover:text-secondary hover:cursor-pointer">
-                      {link.name}
-                    </li>
+                    <p className="font-poppins hover:text-secondary hover:cursor-pointer py-2 flex flex-row gap-3 items-center group">
+                      <span className="text-secondary">{link.icon}</span>
+                      <span className="transition ease-in-out delay-150 duration-150 group-hover:translate-x-3">{link.name}</span>
+                    </p>
                   </a>
                 );
               })}

@@ -51,7 +51,7 @@ function ProjectCard() {
                 className="object-cover w-[100%] h-auto rounded-xl opacity-90 block"
                 key={index}
               />
-              <div className="opacity-0 group-hover:opacity-100 absolute inset-x-0 bottom-0 w-[100%] h-0 group-hover:h-[100%] transition-all duration-500 flex cursor-pointer justify-center bg-gray-gradient rounded-xl items-center ">
+              <div className="opacity-0 group-hover:opacity-100 absolute inset-x-0 bottom-0 w-[100%] h-0 group-hover:h-[100%] transition-all duration-300 flex cursor-pointer justify-center bg-gray-gradient rounded-xl items-center ">
                 <div className="flex flex-col gap-8 px-14 ">
                   <div className="flex flex-col gap-2 items-center">
                     <p className="font-semibold text-lg text-secondary">
