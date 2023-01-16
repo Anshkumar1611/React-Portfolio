@@ -1,5 +1,5 @@
 import React from "react";
-import {school,college} from "../../../assets/svg"
+import { school, college } from "../../../assets/svg";
 
 const details = [
   {
@@ -37,11 +37,13 @@ function EducationCard() {
               />
             </div>
             <div className="flex flex-col gap-3 py-4 lg:py-8 px-4 lg:px-0 sm:basis-2/3 ">
-              <p className="font-bold text-2xl text-secondary">{detail.course}</p>
-              <p className=" font-semibold ">
+              <p className="text-xl sm:font-bold sm:text-2xl text-secondary">
+                {detail.course}
+              </p>
+              <p className=" sm:font-semibold ">
                 {detail.college} | {detail.place}
               </p>
-              <p className=" ">
+              <p>
                 {detail.year} | {detail.status}
               </p>
             </div>

@@ -42,7 +42,7 @@ function About() {
           </p>
           <div className="flex flex-col gap-1">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between ">
-              <div className="flex gap-1 w-1/2">
+              <div className="flex gap-1 sm:w-1/2">
                 <p className="text-gradient font-semibold">Age :</p>
                 <p className="text-semibold ">22</p>
               </div>
@@ -52,11 +52,11 @@ function About() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between ">
-              <div className="flex gap-1 w-1/2">
+              <div className="flex gap-1 sm:w-1/2">
                 <p className="text-gradient font-semibold">Phone :</p>
                 <p className="text-semibold ">+91 639-670-4951</p>
               </div>
-              <div className="flex gap-1 w-1/2">
+              <div className="flex gap-1 sm:w-1/2">
                 <p className="text-gradient font-semibold">Place :</p>
                 <p className="text-semibold ">Agra, India - 282006</p>
               </div>
