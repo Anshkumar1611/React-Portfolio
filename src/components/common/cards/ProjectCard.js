@@ -44,7 +44,7 @@ function ProjectCard() {
       {projects.map((project, index) => {
         return (
           <Tilt key={index}>
-            <div className="flex w-[25rem] ss:w-[30rem] h-[18rem] relative rounded-xl border-2 border-dimBlue hover:border-secondary overflow-hidden group justify-center">
+            <div className="flex w-[20rem] ss:w-[30rem] ss:h-[18rem] relative rounded-xl border-2 border-dimBlue hover:border-secondary overflow-hidden group justify-center">
               <img
                 src={project.pic}
                 alt="project"

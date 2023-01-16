@@ -7,16 +7,16 @@ import Link from "../common/link/Link";
 function Intro() {
   return (
     <div className="flex flex-col gap-5 font-poppins flex-1">
-      <div className="text-6xl font-semibold ">
+      <div className=" text-4xl ss:text-6xl font-semibold ">
         <p className="lg:tracking-wide">Hi There,</p>
       </div>
-      <span className="text-5xl md:text-6xl font-semibold flex gap-4">
+      <span className="text-3xl ss:text-5xl md:text-6xl font-semibold flex gap-4">
         <p className="lg:tracking-wide">I'm </p>
         <p className="text-primary-focus font-bold lg:tracking-wide text-gradient">
           Ansh Kumar
         </p>
       </span>
-      <div className="text-3xl font-semibold lg:tracking-wide flex flex-wrap gap-2 ">
+      <div className="text-xl ss:text-3xl font-semibold lg:tracking-wide flex flex-wrap gap-2 ">
         <span>I am into</span>
         <span>Web Development</span>
         {/* <Typed
