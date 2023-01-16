@@ -39,7 +39,7 @@ function Intro() {
           text={"See Resume"}
           icon={<GrFormNext size={20} />}
           alt="Resume"
-          url="https://drive.google.com/file/d/1Yi8IApKaWtlJqERzT_hNLdZ6pEi1dzrZ/view?usp=share_link"
+          url="https://drive.google.com/file/d/16pjNTopg5fqFeyYBoRZQlQUZTu2CBWy3/view?usp=share_link"
         />
       </div>
       <div>
