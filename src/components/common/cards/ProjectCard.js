@@ -6,6 +6,22 @@ import Tilt from "react-parallax-tilt";
 
 const projects = [
   {
+    pic: Images.cart,
+    name: "QCart App",
+    description:
+      "An E-Commerce Website made with React and Material UI and have all basic functionalities .",
+    site: "https://qkart-ecommerce-site.netlify.app/",
+    code: "https://github.com/Anshkumar1611/",
+  },
+  {
+    pic: Images.qtrip,
+    name: "QTrip App",
+    description:
+      "A Tour and Travels website made with html ,css ,javascript fully functional and ready to use.",
+    site: "https://qtrip-fronend-website.netlify.app/",
+    code: "https://github.com/Anshkumar1611/",
+  },
+  {
     pic: Images.axar,
     name: "Axar Constructions",
     description:
@@ -17,26 +33,26 @@ const projects = [
     pic: Images.cocktails,
     name: "Cocktails",
     description:
-      "A Website for getting your drinks and information of the ingridients used for making the drink",
+      "A Website for getting your drinks and information of the ingridients used for making the drink.",
     site: "https://stellar-froyo-3e69e0.netlify.app/",
     code: "https://github.com/Anshkumar1611/Cocktails",
   },
-  {
-    pic: Images.loremIpsum,
-    name: "Paragraph Generator",
-    description:
-      "A Web Page to generate text of paragraphs. It generates random text paragraphs for random text use.",
-    site: "https://keen-caramel-8ebe98.netlify.app/",
-    code: "https://github.com/Anshkumar1611/Lorem-Ipsum-generator",
-  },
-  {
-    pic: Images.expenseTracker,
-    name: "Expense Tracker",
-    description:
-      "An app to keep track of your income and expenditure .It helps you to keep eye on your monthly expenses.",
-    site: "https://iridescent-raindrop-d1d348.netlify.app/",
-    code: "https://github.com/Anshkumar1611/Expense-Tracker-App",
-  },
+  // {
+  //   pic: Images.loremIpsum,
+  //   name: "Paragraph Generator",
+  //   description:
+  //     "A Web Page to generate text of paragraphs. It generates random text paragraphs for random text use.",
+  //   site: "https://keen-caramel-8ebe98.netlify.app/",
+  //   code: "https://github.com/Anshkumar1611/Lorem-Ipsum-generator",
+  // },
+  // {
+  //   pic: Images.expenseTracker,
+  //   name: "Expense Tracker",
+  //   description:
+  //     "An app to keep track of your income and expenditure .It helps you to keep eye on your monthly expenses.",
+  //   site: "https://iridescent-raindrop-d1d348.netlify.app/",
+  //   code: "https://github.com/Anshkumar1611/Expense-Tracker-App",
+  // },
 ];
 function ProjectCard() {
   return (

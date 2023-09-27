@@ -28,6 +28,8 @@ const Images = {
   loremIpsum: require("./project/lorem-ipsum.png"),
   expenseTracker: require("./project/expense-tracker.png"),
   cocktails: require("./project/cocktails.png"),
+  cart: require("./project/cart.png"),
+  qtrip: require("./project/qtrip.png"),
 };
 
 export default Images;
